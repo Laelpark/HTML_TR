@@ -4,26 +4,58 @@
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
 	<title> 3_table.html</title>
+	
+	<!-- border-solid 테두리설정 / padding 안쪽 네 방향의 여백설정 -->
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding: 10px;
+		}
+	</style>
+
 </head>
- 
 <!--  tab 밀기 / shift+tab 당기기 -->
  
 <body>
 
-	<table>
-		<tr>
-			<td>번호</td>
-			<td>이름</td>
-			<td>아이디</td>
-		</tr>
-		<tr>
-			<td>10</td>
-			<td>박라엘</td>
-			<td>gottkfkd</td>
-		</tr>
+	<table width= "100%">
+		<thead>
+			<tr>
+				<td width= "50px">번호</td>
+				<td>이름</td>
+				<td width= "200px">아이디</td>
+				<td width= "200px">주소</td>
+				<td width= "100px">상세주소</td>
+				<td width= "100px">모바일</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>10</td>
+				<td>박라엘</td>
+				<td>gottkfkd</td>
+				<td>서울특별시 동작구</td>
+				<td>서울특별시 동작구 노량진로</td>
+				<td>010-3977-7694</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>11</td>
+				<td>박라엘</td>
+				<td>gottkfkd</td>
+				<td>서울특별시 강남구</td>
+				<td>서울특별시 강남구 신논현</td>
+				<td>010-0000-0000</td>
+			</tr>
+		</tfoot>
 	</table>
 
-
+	<!-- thead/ tbody/ tfoot은 잘 안쓰긴 하지만 알아두기 -->
 
 </body>
 </html>
