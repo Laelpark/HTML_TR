@@ -14,10 +14,8 @@
 		th, td {
 			padding: 10px;
 		}
-		
 	</style>
 </head>
-
 <body>
 
 	<form method="get" action="./result2.html" id="form">
@@ -66,10 +64,10 @@
 			<input type="email" name="email" id="email" size="13"> @
 			<input type="email" name="email" id="email" size="13">
 			<select name="email">
-			<option value="">메일주소선택
-			<option value="NAVER">naver.com
-			<option value="DAUM">daum.net
-			<option value="GMAIL">gmail
+				<option value="">메일주소선택
+				<option value="NAVER">naver.com
+				<option value="DAUM">daum.net
+				<option value="GMAIL">gmail
 			</select>
 			<input type="button" id="emailCheck" value="√ 인증코드 발송">
 			<br><input type="email" name="email" id="email" size="13">
@@ -80,19 +78,19 @@
 		<td bgcolor="#ececec" align="center">√ 연락처</td>
 		<td>
 			휴대전화 <select name="cellPhone" >
-			<option value="">선택
-			<option value="010">010
-			<option value="011">011
-			<option value="012">012
+				<option value="">선택
+				<option value="010">010
+				<option value="011">011
+				<option value="012">012
 			</select> -
 			<input type="cellPhone" name="cellPhone" id="cellPhone" size="8"> -
 			<input type="cellPhone" name="cellPhone" id="cellPhone" size="8">
 			<br>일반전화 <select name="PHONE">
-			<option value="">선택
-			<option value="02">02
-			<option value="031">031
-			<option value="032">032
-			<option value="070">070
+				<option value="">선택
+				<option value="02">02
+				<option value="031">031
+				<option value="032">032
+				<option value="070">070
 			</select> -
 			<input type="phone" name="phone" id="phone" size="8"> -
 			<input type="phone" name="phone" id="phone" size="8"> 
@@ -109,8 +107,8 @@
 	<tr>
 		<td bgcolor="#ececec" align="center"" width="150px">√ 주소</td>
 		<td>
-			<input type="address" name="address" id="address1" size="100">
-			<br><input type="address" name="address" id="address2" size="100">
+			<input type="address" name="address" id="address1" size="80">
+			<br><input type="address" name="address" id="address2" size="80">
 		</td>
 	</tr>
 	<tr>
@@ -233,14 +231,15 @@
 			<input type="button" id="work"  value="삭제">
 			<br><input type="button" id="work"  value="+ 추가">
 		</td>
-	</td>
-	</form>
-	<script type="text/javascript">
-		/* validation */
-		function here() {
-			alert("확인페이지");
-			document.getElementById("form").submit();
-		}
+		</tr>
+	</table>
+		<script type="text/javascript">
+			/* validation */
+			function here() {
+				alert("확인페이지");
+				document.getElementById("form").submit();
+			}
 		</script>
+	</form>
 </body>
 </html>
