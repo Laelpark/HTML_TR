@@ -1,0 +1,92 @@
+<!DOCTYPE HTML> <!-- css 1-3까지 최종 정리 본 -->
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 1_form.html</title>	
+	
+<!-- 1_스타일 쉬프 3가지 (인라인, 내부 스타일 쉬트, 외부 스타일 쉬트) -->
+	
+	<!-- 내부스타일 쉬트 -->
+	<style type="text/css">
+	p {
+		background-color: skyblue;
+		color: yellow;
+	}
+	</style>
+	
+	<!-- 외부스타일 쉬트 -->
+	<link href"./css/style.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+
+<!-- 인라인 -->
+<p style="background-color: red; color: white;"> css인라인 스타일 쉬트</p>
+
+</body>
+</html>
+
+<!-- 2_선택자 3가지 -->
+
+	<style type="text/css"> /* 스타일 시작할 때 필수로 작성 / 스타일을 헤드 부분에 넣고, 내용을 바디부분에 작성*/
+
+		/* 태그 스타일 */
+		p {
+			font-size: 30px;
+		}
+		
+		/* id 스타일 */
+		#aaa {
+			font-size: 30px;
+		}
+		
+		/* class 스타일 */
+		.bbb {
+			font-size: 30px;
+		}
+	</style>
+
+	<body>
+		<p id="aaa"> id 스타일 내용입니다. <!-- id는 한번에 하나씩 스타일을 줄 수 있음 -->
+		<p class="bbb"> class 스타일 내용입니다. <!-- class는 한번에 많은 내용에 스타일을 줄 수있음 -->
+		<p class="bbb"> class 스타일 내용입니다.
+		<p class="bbb"> class 스타일 내용입니다.
+	</body>
+
+<!-- 3_ 여러가지 선택자 넣는 법 -->
+
+	<style type="text/css"> /* 내용은 바디부분에 작성 */
+	
+		h1, p, span, ul ,il{
+				font-size: 30px;
+				
+	</style>
+	
+	<style type="text/css">  /* 내용은 바디부분에 작성 */
+	
+		ul > li {
+			font-size: 30px;
+		}
+		
+		#ccc #bbb {
+			font-size: 30px;
+		}
+		
+	</style>
+
+	<body>
+		<h1>css 설명내용입니다.</h1>
+		<p>css 설명내용입니다.</p>
+		<span>css 설명내용입니다.</span>
+		<ul>
+			<li>오스카
+			<li>니스영화제
+			<li>부산국제영화제
+			<li>골든글로브
+		</ul>
+		<h1 id="ccc">css설명내용입니다!</h1>
+		<p id="bbb">css설명내용입니다.</p>
+	</body>
+
+
