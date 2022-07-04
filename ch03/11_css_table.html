@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 11_css_table.html</title>	
+</head>
+
+	<style  type="text/css">
+		table {
+			border: solid;
+			border-width: 1px;
+			
+			/* border-collapse:  separate; */ /* (이중 줄 표 생성) */
+			border-collapse: collapse;
+		
+			/* border-spacing: 10px 10px; */
+			
+			width: 80%; /* 80px; */
+			
+			
+			/* table-layout: auto; */
+			table-layout: fixed;
+		
+		}
+		
+		tr,th,td {
+			border: solid;
+			border-width: 1px;
+			border-collapse: collapse;
+			text-align: center; /* left; right; */
+			
+			height: 50px;
+			/* vertical-align: top; */
+			vertical-align: middle; /* top; bottom */
+		}
+	</style>
+<!-- vscode에서 alt+ctrl+방향키 사용히면 영역을 한번에 잡아 삭제 및 수정할 수 있음 -->
+
+<body>
+
+<br>
+	<table>
+		<tr>
+		
+			<th  style="width:80px; height:100px;">번호</th> 
+			<!-- 위에 고정 height값을 잡아도 style을 적용하면 개인적으로 height값 적용 가능 -->
+			<th  style="width: 80px; height:100px;">이름</th>
+			<th width="100px">아이디</th>
+			<td>이메일</td>
+			<td width="200px">모바일</td>
+		</tr>
+<!-- 		
+		<tr>
+			<th>번호</th>
+			<th>이름</th>
+			<th>아이디</th>
+			<th>이메일</th>
+			<th>모바일</th>
+		</tr>
+ -->		
+		<tr>
+			<td>1</td>	
+			<td>박라엘</td>	
+			<td>gottkfkd</td>	
+			<td>gottk@naver.com</td>	
+			<td>010-0000-0000</td>	
+		</tr>
+		<tr>
+			<td>2</td>	
+			<td>이수혁</td>	
+			<td>dfjnks</td>	
+			<td>sgsfrgy@naver.com</td>	
+			<td>010-0000-0001</td>	
+		</tr>
+		<tr>
+			<td>3</td>	
+			<td>이서준</td>	
+			<td>swhdgnm</td>	
+			<td>werg@naver.com</td>	
+			<td>010-0000-0002</td>	
+		</tr>
+		<tr>
+			<td>4</td>	
+			<td>강동원</td>	
+			<td>sfbdb</td>	
+			<td>dfgs@naver.com</td>	
+			<td>010-0000-0003</td>	
+		</tr>
+		<tr>
+			<td>5</td>	
+			<td>박서함</td>	
+			<td>xsgb</td>	
+			<td>sgbhh@naver.com</td>	
+			<td>010-0000-0004</td>	
+		</tr>
+	</table>
+	
+</body>
+</html>
