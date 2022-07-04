@@ -4,24 +4,41 @@
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
 	<title> 13_css_box.html</title>	
-	<!-- display: inline으로 태그를 설정하면 background-color가 전체로 잡히지 않고 글자 영역만 설정됨 -->
 	<style type="text/css">
+	
+/* display: inline(inline-block)으로 태그를 설정하면 background-color가 전체로 잡히지 않고 글자 영역만 설정됨 */
 		div, ul, li {
-			display: inline;
+			/* display: inline; */
+			display: inline-block;
+			width: 100px;
+			height: 50px;
+			text-align: center;
 		}
+ 
+ /* 설정된  background-color가 작은 박스로 만들어짐 */
+/*  	
+ 	span {
+ 		display: block;
+ 		
+ 		width: 100px;
+ 		height: 50px;
+ 		text-align: center;
+ 	}
+ */  	
 	</style>
 	
 </head>
 
 <body>
-	 <!-- div 구역을 나눠주는 태그 -->
+
+	<!--  div: 구역을 나눠주는 태그 -->
 	<div style="background-color: red;"><span>원영</span></div>
 	<div style="background-color: blue;">지현</div>
 	
 	<hr>
 	
 	<div style="background-color: red; width: 100px;">원영</div>
-	<div style="background-color: blue;" heighr: 200px;>지현</div>
+	<div style="background-color: blue; height: 200px;">지현</div>
 	
 	<hr>
 	
@@ -30,5 +47,13 @@
 		<li>지현
 	</ul>
 	
+	<hr>
+<!-- 	
+	<span style="background-color: red;">원형</span>
+	<span style="background-color: blue;">지현</span>
+	<span style="background-color: green;">동건</span>
+	<span style="background-color: gray;">소영</span>
+ -->	
+ 
 </body>
 </html>
