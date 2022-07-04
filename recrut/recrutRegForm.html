@@ -32,6 +32,16 @@
 			visibility: hidden;
 		}
 		
+		.button2 {
+			display: flex;
+			justify-content: center;
+			background-color: #e7e7e7;
+			font-size: 16px;
+			border-radius: 12px;
+			width: 150px;
+			margin: auto;
+		}
+		
 	</style>
 </head>
 
@@ -41,7 +51,7 @@
 	<br>
  	<table width= "100%"> 
 		<tr>
-			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>지원분야</strong>
+			<td width= "150px" style="text-align:center;" bgcolor= "lightgray"><strong>지원분야</strong>
 			<select name="applyFild">
 				<option>지원분야 선택
 				<option>기획/전략
@@ -51,9 +61,9 @@
 				<option>영업/판매/무역
 				<option>상품기획/MD
 			</select></td>
-			<td width= "100px" style="text-align:center;" bgcolor= "lightgray" ><strong>경력구분</strong></td>
-			<td style="text-align:center;">
-				<input type="radio" name="setting";>신입(1년 이하)
+			<td style="text-align:center;" bgcolor= "lightgray" ><strong>경력구분</strong></td>
+			<td style="text-align: center;">
+				&nbsp; <input type="radio" name="setting";>신입(1년 이하)
 				<input type="radio" name="setting";>경력(1년 이상)
 			</td>
 			
@@ -72,13 +82,13 @@
 				<br><form method="post" enctype="multipart/form-data">
     				<div class="button1">
 	        			<label for="chooseFile">
-	        			사진업로드
+	        			cklick
 	        			</label>
     				</div>
    				 <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
 				</form>
 			</th>
-			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>성명</strong></td>
+			<td width= "100px" height="30px;" style="text-align:center;" bgcolor= "lightgray"><strong>성명</strong></td>
 			<td width= "300px">
 				<input type="text" name="text" size="30%" style="width:80%; border: 0;">
 			</td>
@@ -89,7 +99,7 @@
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
-			<td style="text-align:center;" bgcolor= "lightgray"><strong>영문</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>영문</strong></td>
 			<td>
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
@@ -100,7 +110,7 @@
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
-			<td style="text-align:center;" bgcolor= "lightgray"><strong>전화번호</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>전화번호</strong></td>
 			<td>
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
@@ -111,7 +121,7 @@
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
-			<td style="text-align:center;" bgcolor= "lightgray"><strong>전자우편</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>전자우편</strong></td>
 			<td>
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
@@ -122,7 +132,7 @@
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
-			<td style="text-align:center;" bgcolor= "lightgray"><strong>주소</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>주소</strong></td>
 			<td width= "200px" style="text-align:light;" colspan= "4">
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
@@ -136,7 +146,7 @@
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
-			<td style="text-align:center;" bgcolor= "lightgray"><strong>취미생활</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>취미생활</strong></td>
 			<td width= "200px" style="text-align:light;" colspan= "4">
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
@@ -238,7 +248,7 @@
 		</tr>
 	</table>
 	<br>
-	<br><input type="button" id="applyDoneButton" onclick="here();" value="등록하기" style="vertical-align: middle; background-color: lightgray;">
-	<input type="button" id="canaelButton" onclick="here();" value="취소하기"style="vertical-align: middle; background-color: lightgray;">
+	<br><input type="button2" id="applyDoneButton" onclick="here();" value="등록하기" style="vertical-align: middle; background-color: lightgray;">
+	<input type="button3" id="canaelButton" onclick="here();" value="취소하기"style="vertical-align: middle; background-color: lightgray;">
 </body>
 </html>
