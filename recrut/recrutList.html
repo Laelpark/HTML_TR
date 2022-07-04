@@ -15,11 +15,22 @@
 	th, td {
 			padding: 1px;
 		}
+		
+		.button1 {
+			display: flex;
+			justify-content: center;
+			background-color: blue;
+			font-size: 16px;
+			border-radius: 12px;
+			width: 150px;
+			margin: auto;
+		}
 
 	</style>
 <body>
 
 	<form method="get" action="recrutRegForm.html" id="applyButton">
+	<form method="get" action="recrutRegForm.html" id="searchButton">
 	
 	<h1 style="text-align: center;">입사지원 현황</h1>
 	<br>
@@ -68,15 +79,15 @@
 	</table> 
 	<br>
 	<div>
-		<input width="20px" height="20px" type="text" name="serch" id="serch" size="55" placeholder="검색어를 입력하세요." style="margin-right: 8px; vertical-align: middle; text-align:center;">
- 		<input type="button" id="searchButton" onclick="here();" value="검색" style="vertical-align: middle; background-color: white;">
+		<input width="20px" height="20px" type="text" name="serch" id="serch" size="55" placeholder="검색어를 입력하세요." style="margin-right: 8px; text-align:center; justify-content: center;">
+ 		<input type="button" id="searchButton" onclick="here();" value="검색" justify-content:"center;" background-color: white;">
 	</div>
 	<script type="text/javascript">
 			/* validation */
 			function here() {
 				document.getElementById("applyButton").submit();
 			}
-		</script>
+	</script>
 		
 </body>
 </html>

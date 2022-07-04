@@ -104,9 +104,9 @@
 				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
 			</td>
 			<td style="text-align:center;" bgcolor= "lightgray"><strong>생년월일</strong></td>
-			<td>
-				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
-			</td>
+			<td><div>
+				<input type="date" id="date" name="date" value="2022-07-04"  min="1950-01-01" max="2029-12-31">
+			</div></td>
 		</tr>
 		<tr>
 	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
@@ -248,7 +248,7 @@
 		</tr>
 	</table>
 	<br>
-	<br><input type="button2" id="applyDoneButton" onclick="here();" value="등록하기" style="vertical-align: middle; background-color: lightgray;">
+	<br><input type="button2" id="applyDoneButton" onclick="here();" value="저장하기" style="vertical-align: middle; background-color: lightgray;">
 	<input type="button3" id="canaelButton" onclick="here();" value="취소하기"style="vertical-align: middle; background-color: lightgray;">
 </body>
 </html>
