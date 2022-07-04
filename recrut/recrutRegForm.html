@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 3_table.html</title>
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding: px;
+		}
+		
+		.button1 {
+			display: flex;
+			justify-content: center;
+			background-color: #e7e7e7;
+			font-size: 16px;
+			border-radius: 12px;
+			width: 150px;
+			margin: auto;
+		}
+		
+		lable {
+			cursor: pointer;
+		}
+		
+		#chooseFile {
+			visibility: hidden;
+		}
+		
+	</style>
+</head>
+
+<body> 
+
+	<h1 style="text-align:center;" >입사지원서</h1>
+	<br>
+ 	<table width= "100%"> 
+		<tr>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>지원분야</strong>
+			<select name="applyFild">
+				<option>지원분야 선택
+				<option>기획/전략
+				<option>마케팅/홍보/조사
+				<option>회계/세무/재무
+				<option>인사/노무
+				<option>영업/판매/무역
+				<option>상품기획/MD
+			</select></td>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray" ><strong>경력구분</strong></td>
+			<td style="text-align:center;">
+				<input type="radio" name="setting";>신입(1년 이하)
+				<input type="radio" name="setting";>경력(1년 이상)
+			</td>
+			
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>희망연봉</strong></td>
+			<td width= "150px" style="text-align:center;">
+				<input type="text" name="text" size="40" style="width:80%; border: 0;">
+			</td>
+		</tr>
+	</table>
+	<br>
+	<h3>□ 기본정보</h3>
+	<table width= "100%">
+		<tr>
+			<th width= "150px" style="text-align:center;" rowspan= "6">
+				<font color= "gray"><i>반명함 사진첨부</font></i>
+				<br><form method="post" enctype="multipart/form-data">
+    				<div class="button1">
+	        			<label for="chooseFile">
+	        			사진업로드
+	        			</label>
+    				</div>
+   				 <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+				</form>
+			</th>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>성명</strong></td>
+			<td width= "300px">
+				<input type="text" name="text" size="30%" style="width:80%; border: 0;">
+			</td>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>한문</strong></td>
+			<td width= "300px">
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+		</tr>
+		<tr>
+	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>영문</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>생년월일</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+		</tr>
+		<tr>
+	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>전화번호</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>비상연락망</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+		</tr>
+		<tr>
+	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>전자우편</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>나이</strong></td>
+			<td>
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+		</tr>
+		<tr>
+	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>주소</strong></td>
+			<td width= "200px" style="text-align:light;" colspan= "4">
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+	<!-- 
+			<td width= "200" style="text-align:center;"></td>
+			<td width= "200" style="text-align:center;"></td>
+			<td style="text-align:center;" colspan= "2">나이</td>
+			<td width= "200" style="text-align:center;"></td>
+			<td width= "200" style="text-align:center;"></td> 
+	 -->
+		</tr>
+		<tr>
+	<!-- <td width= "100" style="text-align:center;">정장차림의 증명사진 넣으시면 됩니다. 단축키 ctrl+N+l</td> -->
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>취미생활</strong></td>
+			<td width= "200px" style="text-align:light;" colspan= "4">
+				<input type="text" name="text" size="20%" style="width:80%; border: 0;">
+			</td>
+	<!-- 
+			<td width= "200" style="text-align:center;"></td>
+			<td style="text-align:center;" colspan= "2">나이</td>
+			<td width= "200" style="text-align:center;"></td>
+			<td width= "200" style="text-align:center;"></td> 
+	-->
+		</tr>
+	</table>
+	<br>
+	<h3>□ 학력사항</h3>
+	<table width= "100%">
+		<tr>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>기간</strong></td>
+			<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>출신학교</strong></td>
+			<td width= "50px" style="text-align:center;" bgcolor= "lightgray"><strong>구분</strong></td>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>학과</strong></td>
+			<td width= "50px" style="text-align:center;" bgcolor= "lightgray"><strong>소재지</strong></td>
+		</tr>
+		<tr>
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+		</tr>
+		<tr>
+			<td style="text-align:center;" height="30px;"</td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+			<td style="text-align:center;"></td>
+		</tr>
+	</table>
+	<br>
+	<h3>□ 교육연수</h3>
+	<table width= "100%">
+		<tr>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>연수기간</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>연수기관</strong></td>
+			<td style="text-align:center;" bgcolor= "lightgray"><strong>연수과정 및 내용</strong></td>
+		</tr>
+		<tr>
+			<td style="text-align:center;" height="30px;"></font></td>
+			<td style="text-align:center;" height="30px;"></font></td>
+			<td style="text-align:center;" height="30px;"></font></td>
+		</tr>
+	</table>
+	<br>
+	<h3>□ 자격사항</h3>
+	<table width= "100%" >
+		<tr>
+			<td width= "300px" style="text-align:center;" bgcolor= "lightgray"><strong>취득일</strong></td>
+			<td width= "400px" style="text-align:center;" bgcolor= "lightgray"><strong>종류 및 등급</strong></td>
+			<td width= "400px" style="text-align:center;" bgcolor= "lightgray"><strong>발행처</strong></td>
+			<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>보유기술 및 수준</strong></td>
+		</tr>
+		<tr height="30">
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></font></td>
+		</tr>
+		<tr height="30">
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></td>
+			<td style="text-align:center;" height="30px;"></td>	
+		</tr>
+	</table>
+	<br>
+	<h3> □ 경력사항(4대 보험 가입 경력)</h3>
+	<table width= "100%" >
+		<tr>
+			<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>활동기간</strong></td>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;관</strong></td>
+			<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>담당업무</strong></td>
+			<td width= "500px" style="text-align:center;" bgcolor= "lightgray"><strong>경험 및 습득역량</strong></td>
+		</tr>
+		<tr height="30">
+			<td></td>
+			<td></td>
+			<td></td>	
+			<td></td>	
+		</tr>
+		<tr height="30">
+			<td></td>
+			<td></td>
+			<td></td>	
+			<td></td>	
+		</tr>
+		<tr height="30">
+			<td></td>
+			<td></td>
+			<td></td>	
+			<td></td>	
+		</tr>
+	</table>
+	<br>
+	<br><input type="button" id="applyDoneButton" onclick="here();" value="등록하기" style="vertical-align: middle; background-color: lightgray;">
+	<input type="button" id="canaelButton" onclick="here();" value="취소하기"style="vertical-align: middle; background-color: lightgray;">
+</body>
+</html>

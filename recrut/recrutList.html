@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 1_form.html</title>	
+</head>
+	<style  type="text/css" text>
+	
+	table, th, td {
+			border: 1px solid lightgray;
+			border-collapse: collapse;
+		}
+		
+	th, td {
+			padding: 1px;
+		}
+
+	</style>
+<body>
+
+	<form method="get" action="recrutRegForm.html" id="applyButton">
+	
+	<h1 style="text-align: center;">입사지원 현황</h1>
+	<br>
+	
+	<div style="position: absolute; right: 20px; bottom: 510px;">
+	<input type="button" id="applyButton" onclick="here();" value="등록" style="vertical-align: middle; background-color: lightgreen;">
+	</div>
+	
+	 <br><table width= "100%">
+		<tr>
+			<td width= "30px"  height="40px" style="text-align:center;" bgcolor= "lightskyblue"><strong>번호</strong></td>
+			<td width= "80px" style="text-align:center;"><strong>이름</strong></td>
+			<td width= "80px" style="text-align:center;"><strong>나이</strong></td>
+			<td width= "80px" style="text-align:center;"><strong>원서링크</strong></td>
+		</tr>
+		<tr>
+			<td width= "30px"  height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>1</strong></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+		</tr>
+		<tr>
+			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>2</strong></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+		</tr>
+		<tr>
+			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>3</strong></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+		</tr>
+		<tr>
+			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>4</strong></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+		</tr>
+		<tr>
+			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>5</strong></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+			<td width= "100px" style="text-align:center;"></td>
+		</tr>
+	</table> 
+	<br>
+	<div>
+		<input width="20px" height="20px" type="text" name="serch" id="serch" size="55" placeholder="검색어를 입력하세요." style="margin-right: 8px; vertical-align: middle; text-align:center;">
+ 		<input type="button" id="searchButton" onclick="here();" value="검색" style="vertical-align: middle; background-color: white;">
+	</div>
+	<script type="text/javascript">
+			/* validation */
+			function here() {
+				document.getElementById("applyButton").submit();
+			}
+		</script>
+		
+</body>
+</html>
