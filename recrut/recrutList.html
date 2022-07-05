@@ -3,18 +3,17 @@
 <head>
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
-	<title> 1_form.html</title>	
+	<title>recrutList.html</title>	
 </head>
-	<style  type="text/css" text>
-	
-	table, th, td {
-			border: 1px solid lightgray;
-			border-collapse: collapse;
-		}
-		
-	th, td {
-			padding: 1px;
-		}
+	<style  type="text/css" text>table, th, td {
+				border: 1px solid lightgray;
+				border-collapse: collapse;
+			}
+			
+		th, td {
+				padding: 1px;
+				text-align: center;
+			}
 		
 		.button1 {
 			display: flex;
@@ -26,68 +25,95 @@
 			margin: auto;
 		}
 
+		th {
+			background-color: lightskyblue;
+		}
+
+		.searching {
+			border: 0 solid black;
+		}
 	</style>
 <body>
 
 	<form method="get" action="recrutRegForm.html" id="applyButton">
-	<form method="get" action="recrutRegForm.html" id="searchButton">
+	<!-- <form method="get" action="recrutList.html" id="searchButton"> -->
 	
-	<h1 style="text-align: center;">입사지원 현황</h1>
+	<h1 style="text-align: center;">지원 현황</h1>
 	<br>
-	
-	<div style="position: absolute; right: 20px; bottom: 510px;">
-	<input type="button" id="applyButton" onclick="here();" value="등록" style="vertical-align: middle; background-color: lightgreen;">
-	</div>
-	
-	 <br><table width= "100%">
+	<br>
+	<table width= "100%">
 		<tr>
-			<td width= "30px"  height="40px" style="text-align:center;" bgcolor= "lightskyblue"><strong>번호</strong></td>
-			<td width= "80px" style="text-align:center;"><strong>이름</strong></td>
-			<td width= "80px" style="text-align:center;"><strong>나이</strong></td>
-			<td width= "80px" style="text-align:center;"><strong>원서링크</strong></td>
+			<th width= "30px"  height="40px" "lightskyblue">번호</th>
+			<th width= "80px"><strong>이름</strong></th>
+			<th width= "80px"><strong>나이</strong></th>
+			<th width= "80px"><strong>지원분야</strong></th>
+			<th width= "80px"><strong>지원서</strong></th>
 		</tr>
-		<tr>
-			<td width= "30px"  height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>1</strong></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
+		<tr onclick="newPage()">
+			<td width= "30px"  height="30px" ><strong>1</strong></td>
+			<td width= "100px">박**</td>
+			<td width= "100px">2n</td>
+			<td width= "100px">개발/IT</td>
+			<td>
+				<a href="file:///D:/factory/ws_sts_4151/html_tr/recrut/recrutRegForm.html?serch="><img src="./image/click.png" alt="지원하기" style="margin-left: 20px;"/></a>
+				<span>Click</span>
+			</td>
 		</tr>
-		<tr>
-			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>2</strong></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
+		<tr onclick="newPage()">
+			<td width= "30px" height="30px"><strong>2</strong></td>
+			<td width= "100px">이**</td>
+			<td width= "100px">2n</td>
+			<td width= "100px">기획/전략</td>
+			<td>
+				<img src="./image/click.png" alt="지원하기" style="margin-left: 20px;"/></a>
+				<span>Click</span>
+			</td>
 		</tr>
-		<tr>
-			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>3</strong></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
+		<tr onclick="newPage()">
+			<td width= "30px" height="30px"><strong>3</strong></td>
+			<td width= "100px">유**</td>
+			<td width= "100px">3n</td>
+			<td width= "100px">마케팅/홍보/조사</td>
+			<td>
+				<img src="./image/click.png" alt="지원하기" style="margin-left: 20px;"/></a>
+				<span>Click</span>
+			</td>
 		</tr>
-		<tr>
-			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>4</strong></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
+		<tr onclick="newPage()">
+			<td width= "30px" height="30px"><strong>4</strong></td>
+			<td width= "100px" >김**</td>
+			<td width= "100px" >2n</td>
+			<td width= "100px" >인사/노무</td>
+			<td>
+				<img src="./image/click.png" alt="지원하기" style="margin-left: 20px;"/></a>
+				<span>Click</span>
+			</td>
 		</tr>
-		<tr>
-			<td width= "30px" height="30px" style="text-align:center;" bgcolor= "lightskyblue"><strong>5</strong></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
-			<td width= "100px" style="text-align:center;"></td>
+		<tr onclick="newPage()">
+			<td width= "30px" height="30px"><strong>5</strong></td>
+			<td width= "100px" >최**</td>
+			<td width= "100px" >3n</td>
+			<td width= "100px" >상품기획/MD</td>
+			<td>
+				<img src="./image/click.png" alt="지원하기" style="margin-left: 20px;"/></a>
+				<span>Click</span>
+			</td>
 		</tr>
 	</table> 
 	<br>
-	<div>
-		<input width="20px" height="20px" type="text" name="serch" id="serch" size="55" placeholder="검색어를 입력하세요." style="margin-right: 8px; text-align:center; justify-content: center;">
- 		<input type="button" id="searchButton" onclick="here();" value="검색" justify-content:"center;" background-color: white;">
+	<div style="margin-left: 30%;">
+		<input type="text" name="serch" id="search" placeholder="검색어를 입력하세요." style="text-align:center; width: 50%; height: 20px;" >
+		<input type="button" id="searchButton" onclick="here();" value="검색" background-color= lightgray;" style="vertical-align: middle;">
 	</div>
 	<script type="text/javascript">
-			/* validation */
-			function here() {
-				document.getElementById("applyButton").submit();
-			}
+		/* validation */
+		function here() {
+			document.getElementById("applyButton").submit();
+		}
+
+		function newPage() {
+			window.location.href = './recruitView.html'
+		}
 	</script>
-		
 </body>
 </html>

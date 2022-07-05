@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> recrutModForm.html</title>	
+</head>
+
+<body>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title>recrutRegForm.html</title>
+	<style type="text/css">
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			padding: px;
+		}
+
+		lable {
+			cursor: pointer;
+		}
+
+		#ex_file {
+			visibility: hidden;
+		}
+		
+	</style>
+</head>
+
+<body> 
+	<form action="./recrutView.html">
+		<h1 style="text-align:center;" >지원서</h1>
+		<br>
+		<table width= "100%"> 
+			<tr>
+				<td width= "150px" style="text-align:center;" bgcolor= "lightgray">
+					<strong>지원분야</strong>
+					<select name="applyFild">
+						<option>지원분야 선택
+						<option>기획/전략
+						<option>마케팅/홍보/조사
+						<option>회계/세무/재무
+						<option>인사/노무
+						<option>영업/판매/무역
+						<option>상품기획/MD
+						<option>개발/IT
+					</select>
+				</td>
+				<td style="text-align:center;" bgcolor= "lightgray" ><strong>경력구분</strong></td>
+				<td style="text-align: center;">
+					&nbsp; <input type="radio" name="setting";>신입(1년 이하)
+					<input type="radio" name="setting";>경력(1년 이상)
+				</td>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>희망연봉</strong></td>
+				<td width= "150px" style="text-align:center;">000,000</td>
+			</tr>
+		</table>
+		<br>
+		<h3>□ 기본정보</h3>
+		<table width= "100%">
+			<tr>
+				<th width= "150px" rowspan= "6">
+					<div class="button1">
+						<img src="" id="preview" width="250px;">	
+						<label for="ex_file">click</label>
+						<input type="file" id="ex_file" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+					</div>
+				</th>
+				<td width= "100px" height="30px;" style="text-align:center;" bgcolor= "lightgray"><strong>성명</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">
+					<input type="text" value="" id="name">
+				</td>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>한문</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">
+					<input type="text" value="" id="chiness">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>영문</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">Lael Park</td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>생년월일</strong></td>
+				<td>
+					<div>
+						<input type="date" id="now_date" name="date" min="1950-01-01" max="2029-12-31"  style="display: block; margin: 0 auto; width:100px; height:30px;">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>전화번호</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">010-0000-0000</td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>비상연락망</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">010-0000-0001</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>전자우편</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">*******@naver.com</td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>나이</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">nn</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>취미생활</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">ㅇㅇ</td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>장점</strong></td>
+				<td width= "300px" height="30px;" style="text-align:center;">ㅇㅇㅇ</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>주소</strong></td>
+				<td  width= "300px" height="30px;" style="text-align:center;">ㅇㅇ시 ㅇㅇ구 ㅇㅇ로</td>
+				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>상세주소</strong></td>
+				<td  width= "300px" height="30px;" style="text-align:center;">ㅇㅇ아파트 000동 0000호</td>
+			</tr>
+		</table>
+		<br>
+		<h3>□ 학력사항</h3>
+		<table width= "100%">
+			<tr>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>기간</strong></td>
+				<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>출신학교</strong></td>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>학과</strong></td>
+				<td width= "50px" style="text-align:center;" bgcolor= "lightgray"><strong>졸업</strong></td>
+				<td width= "50px" style="text-align:center;" bgcolor= "lightgray"><strong>소재지</strong></td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" height="30px;">2000.00-2000.00</td>
+				<td style="text-align:center;">ㅇㅇ대학교</td>
+				<td style="text-align:center;">ㅇㅇ학과</td>
+				<td style="text-align:center;">졸</td>
+				<td style="text-align:center;">ㅇㅇ</td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" height="30px;">2000.00-2000.00</td>
+				<td style="text-align:center;">ㅇㅇ고등학교</td>
+				<td style="text-align:center;">-</td>
+				<td style="text-align:center;">졸</td>
+				<td style="text-align:center;">ㅇㅇ</td>
+			</tr>
+		</table>
+		<br>
+		<h3>□ 교육연수</h3>
+		<table width= "100%">
+			<tr>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>연수기간</strong></td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>연수기관</strong></td>
+				<td style="text-align:center;" bgcolor= "lightgray"><strong>연수과정 및 내용</strong></td>
+			</tr>
+			<tr>
+				<td style="text-align:center;" height="30px;">2000.00.00</font></td>
+				<td style="text-align:center;" height="30px;">ㅇㅇ학원</font></td>
+				<td style="text-align:center;" height="30px;">-</font></td>
+			</tr>
+		</table>
+		<br>
+		<h3>□ 자격사항</h3>
+		<table width= "100%" >
+			<tr>
+				<td width= "300px" style="text-align:center;" bgcolor= "lightgray"><strong>취득일</strong></td>
+				<td width= "400px" style="text-align:center;" bgcolor= "lightgray"><strong>종류 및 등급</strong></td>
+				<td width= "400px" style="text-align:center;" bgcolor= "lightgray"><strong>발행처</strong></td>
+				<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>보유기술 및 수준</strong></td>
+			</tr>
+			<tr height="30">
+				<td style="text-align:center;" height="30px;">2000.00.00</td>
+				<td style="text-align:center;" height="30px;">정보처리기사</td>
+				<td style="text-align:center;" height="30px;">한국산업인력공단</td>
+				<td style="text-align:center;" height="30px;">-</font></td>
+			</tr>
+			<tr height="30">
+				<td style="text-align:center;" height="30px;"></td>
+				<td style="text-align:center;" height="30px;"></td>
+				<td style="text-align:center;" height="30px;"></td>
+				<td style="text-align:center;" height="30px;"></td>	
+			</tr>
+		</table>
+		<br>
+		<h3> □ 경력사항(4대 보험 가입 경력)</h3>
+		<table width= "100%" >
+			<tr>
+				<td width= "200px" style="text-align:center;" bgcolor= "lightgray"><strong>활동기간</strong></td>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;관</strong></td>
+				<td width= "100px" style="text-align:center;" bgcolor= "lightgray"><strong>담당업무</strong></td>
+				<td width= "500px" style="text-align:center;" bgcolor= "lightgray"><strong>경험 및 습득역량</strong></td>
+			</tr>
+			<tr height="30">
+				<td style="text-align:center;">2000.00.00</td>
+				<td style="text-align:center;">ㅇㅇ기관</td>
+				<td style="text-align:center;">ㅇㅇ</td>	
+				<td style="text-align:center;">-</td>	
+			</tr>
+			<tr height="30">
+				<td style="text-align:center;">2000.00.00</td>
+				<td style="text-align:center;">△△기관</td>
+				<td style="text-align:center;">△△</td>	
+				<td style="text-align:center;">-</td>	
+			</tr  height="30">
+				<td style="text-align:center;">-</td>
+				<td style="text-align:center;">-</td>
+				<td style="text-align:center;">-</td>	
+				<td style="text-align:center;">-</td>
+			</tr>
+		</table>
+		<br>
+		<a href="file:///D:/factory/ws_sts_4151/html_tr/recrut/recrutList.html" style="float: left; width: 70px; height: 70px;">
+			<img type= "button" id="deletebtn" name="deletebtn" onclick="cancle();" src="./image/delete.png" alt="삭제하기" style="width: 40px; height: 40px; vertical-align:text-middle;">
+			<br>
+			<span>삭제하기</span>
+		</a>
+		<a href="file:///D:/factory/ws_sts_4151/html_tr/recrut/recrutList.html" style="float: right;" width: 70px; height: 70px;">
+			<img type="button" id="savebtn" name="savebtn" onclick="save();" src="./image/save.png" alt="저장하기" style="width: 50px; height: 50px; vertical-align:text-middle;">
+			<br>
+			<span>저장하기</span>
+		</a>
+	</form>
+	<script type="text/javascript">
+		document.getElementById('now_date').valueAsDate = new Date();
+
+		/* validation */
+		function save() {
+			alert("저장되었습니다.");
+			document.getElementById("savebtn").submit();
+
+			var name = sessionStorage.setItem("name");
+			sessionStorage.setItem("name", name);
+			var name = sessionStorage.setItem("chiness");
+			sessionStorage.setItem("chiness", chiness);
+		}
+		
+		function cancle() {
+			alert("삭제되었습니다.");
+			document.getElementById("deletebtn").submit();
+		}
+
+		// 데이터 받아오기
+		var img = sessionStorage.getItem("img");
+		document.getElementById("preview").src = img;
+
+		// 이미지 미리보기
+        const reader = new FileReader();
+        reader.onload = (readerEvent) => {
+            document.querySelector("#preview").setAttribute("src", readerEvent.target.result);
+        };
+        document.querySelector("#ex_file").addEventListener("change", (changeEvent) => {
+            const imgFile = changeEvent.target.files[0];
+            reader.readAsDataURL(imgFile);
+        })
+	</script>
+</body>
+</html>
