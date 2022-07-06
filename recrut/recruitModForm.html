@@ -13,7 +13,7 @@
 <head>
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
-	<title>recruitModForm.html</title>
+	<title>recrutRegForm.html</title>
 	<style type="text/css">
 		table, th, td {
 			border: 1px solid black;
@@ -85,7 +85,9 @@
 			</tr>
 			<tr>
 				<td style="text-align:center;" bgcolor= "lightgray" height="30px;"><strong>영문</strong></td>
-				<td width= "300px" height="30px;" style="text-align:center;">Lael Park</td>
+				<td width= "300px" height="30px;" style="text-align:center;">
+					<input type="text" value="" id="english">
+				</td>
 				<td style="text-align:center;" bgcolor= "lightgray"><strong>생년월일</strong></td>
 				<td>
 					<div>
@@ -221,16 +223,15 @@
 	<script type="text/javascript">
 		document.getElementById('now_date').valueAsDate = new Date();
 
+		/* validation */
 		function save() {
 			alert("저장되었습니다.");
 			document.getElementById("savebtn").submit();
 
 			var name = sessionStorage.setItem("name");
 			sessionStorage.setItem("name", name);
-			var chiness = sessionStorage.setItem("chiness");
+			var name = sessionStorage.setItem("chiness");
 			sessionStorage.setItem("chiness", chiness);
-			var english = sessionStorage.setItem("english");
-			sessionStorage.setItem("english", english);
 		}
 		
 		function cancle() {
@@ -241,6 +242,7 @@
 		// 데이터 받아오기
 		var img = sessionStorage.getItem("img");
 		document.getElementById("preview").src = img;
+		
 
 		// 이미지 미리보기
         const reader = new FileReader();
