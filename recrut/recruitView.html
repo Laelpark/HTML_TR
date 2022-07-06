@@ -13,7 +13,7 @@
 <head>
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
-	<title>recrutRegForm.html</title>
+	<title>recruitView.html</title>
 	<style type="text/css">
 		table, th, td {
 			border: 1px solid black;
@@ -69,7 +69,7 @@
 			<th width= "150px" style="text-align:center;" rowspan= "6">
 				<div class="button1">
 					<img src="" id="preview" width="250px;">	
-					<label for="ex_file">click</label>
+					<label for="ex_file"></label>
 					<input type="file" id="ex_file" name="chooseFile" accept="image/*" onchange="loadFile(this)">
 				</div>
 			</th>
@@ -207,9 +207,20 @@
 		<br>
 		<span>수정하기</span>
 	</a>
+	<a href="file:///D:/factory/ws_sts_4151/html_tr/recrut/recrutList.html" style="float: left;" width: 70px; height: 70px;">
+			<img type="button" name="savebtn1" src="./image/save.png" onclick="save()" alt="저장하기" style="width: 50px; height: 50px; vertical-align:text-middle;">
+			<br>
+			<span>저장하기</span>
+		</a>
 	<script type="text/javascript">
 		document.getElementById('now_date').valueAsDate = new Date();
+		
+		function save() {
+			alert("저장되었습니다.");
+			document.getElementsByName("savebtn1").submit();
+		}
 
+		
 		// 데이터 받아오기
 		var img = sessionStorage.getItem("img");
 		var name = sessionStorage.getItem("name");

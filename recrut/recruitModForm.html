@@ -13,7 +13,7 @@
 <head>
 	<meta charset= "uTF-8">
 	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
-	<title>recrutRegForm.html</title>
+	<title>recruitModForm.html</title>
 	<style type="text/css">
 		table, th, td {
 			border: 1px solid black;
@@ -221,14 +221,13 @@
 	<script type="text/javascript">
 		document.getElementById('now_date').valueAsDate = new Date();
 
-		/* validation */
 		function save() {
 			alert("저장되었습니다.");
 			document.getElementById("savebtn").submit();
 
 			var name = sessionStorage.setItem("name");
 			sessionStorage.setItem("name", name);
-			var name = sessionStorage.setItem("chiness");
+			var chiness = sessionStorage.setItem("chiness");
 			sessionStorage.setItem("chiness", chiness);
 		}
 		
