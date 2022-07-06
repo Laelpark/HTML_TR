@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 16_css_position3.html</title>	
+	
+	<style type="text/css">
+	
+	@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	
+		#aaa {
+			background-color: lime;
+			margin: 0px;
+			height:80px; 
+			text-align: center;
+			font-size: 50px;
+			padding: 50px;
+		}
+		
+		#bbb {
+			background-color: blue;
+			float: left;
+			height:700px; 
+			width: 20%;
+			color: white;
+		}
+		
+		#ccc {
+			float: left;
+			text-align: center;
+			height: 700px;
+		}
+		
+		#eee {
+			background-color: gray;
+			float: right;
+			width: 20%;
+			height: 700px;
+		}
+		
+		#ddd {
+			background-color: orange;
+			clear: both;
+			height: 100px;
+			text-align: center;
+		}
+		
+		td {
+			width: 58px;
+		}
+
+		tr {
+			height: 70px;
+		}
+		
+		th, td {
+			font-size: small;
+		}
+
+		.img {
+			width: 100%;
+			height: 700px;
+		}
+		
+		dl {
+			padding: 20px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<h4 id="aaa">회원관리 홈페이지</h4>
+	
+	<!-- 회원관리 리스트 -->
+	<div id="bbb">
+		<dl>
+			<dt>📢 건의 및 관리</dt>
+			<hr>
+			<dd>1:1상담</dd>
+			<dd>문의사항</dd>
+			<dd>A/S건의</dd>
+			<dd>회원설정</dd>
+		</dl>
+	</div>
+	
+	<div id="ccc">
+		<table width="100%">
+			<thead style="float: left;">
+				<tr>
+					<th colspan="10">회원관리</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>no</td>
+					<td>관리자여부</td>
+					<td>이름</td>
+					<td>아이디</td>
+					<td>이메일</td>
+					<td>핸드폰</td>
+					<td>마지막 로그인</td>
+					<td>회원가입</td>
+					<td>최근 수정일</td>
+				   	<td>탈퇴여부</td>	
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="eee">
+		<img class="img" alt="" src="https://cdn.flashtalking.com/xre/416/4167376/3896517/image/3896517.gif?506015042">
+	</div>
+
+	<div id="ddd">저장</div>
+	
+</body>
+</html>

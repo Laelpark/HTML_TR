@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset= "uTF-8">
+	<meta name= "viewport" content= "width=device-vidth, initial-scale=1.0">
+	<title> 16_css_position3.html</title>	
+	
+	<style type="text/css">
+
+		#uuu {
+			margin: 0px;
+		}
+	
+		#aaa {
+			background-color: lime;
+			margin: 0px;
+			height:40px; 
+		}
+		
+		#bbb {
+			background-color: blue;
+			float: left;
+			height:170px; 
+			width:190px;
+			color: white;
+		}
+		
+		#ccc {
+			background-color: green;
+			float: left;
+		}
+		
+		#ddd {
+			background-color: orange;
+			clear: both;
+			height: 100px;
+			text-align: center;
+		}
+
+		td {
+			width: 73px;
+		}
+
+		tr {
+			height: 70px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<h3 id="uuu">해더</h3>
+	<h4 id="aaa">GNB</h4>
+	<div id="bbb">
+		<ul>
+			<li>회원 관리
+			<li>사이트 관리
+			<li>시스템 관리
+			<li>커뮤니케이션 관리
+			<li>템플릿 관리
+			<li>로그 관리
+			<li>통계
+		</ul>
+	</div>
+	<div id="ccc">
+		<table width="100%">
+			<thead style="float: left;">
+				<tr>
+					<th colspan="10">회원관리</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>no</td>
+					<td>관리자여부</td>
+					<td>이름</td>
+					<td>아이디</td>
+					<td>이메일</td>
+					<td>핸드폰</td>
+					<td>마지막 로그인</td>
+					<td>회원가입</td>
+					<td>최근 수정일</td>
+				   	<td>탈퇴여부</td>	
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="ddd">저장</div>
+</body>
+</html>
