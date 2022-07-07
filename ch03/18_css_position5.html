@@ -17,8 +17,10 @@
 			height: 100px;
 			background-color: maroon;
 			
-			/* position: absolute; */
-			position: relative;
+			
+			/* position: static; */  /* 오브젝 아래로 이동 */
+			/* position: absolute; */  /* 오브젝 위로 곂쳐서 이동 */
+			position: relative; /* 오브젝과 일정 간격을 두고 떨어짐 */
 			top: 50px;
 			left: 50px;
 		}	
@@ -28,14 +30,21 @@
 			height: 100px;
 			background-color: orange;
 		}
+		#ddd {
+			background-color: fuchsia;
+			position: absolute;
+			top: 30px;
+			left: 300px;
+		}
+		
 	</style>
 </head>
 
 <body>
-
-	<div id="aaa">원형</div>
-	<div id="bbb">지현</div>
-	<div id="ccc">동건</div>
+	<div id="ddd">
+	<div id="aaa">1</div>
+	<div id="bbb">2</div>
+	<div id="ccc">3</div>
 
 </body>
 </html>
