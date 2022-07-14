@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>02_grid.html</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+	<!-- start -->
+	<!-- 그리드는 총 12개이고, 칸은 col로 설정가능. 칸 설정 안할 경우 12칸을 알아서 분배함 -->
+	 
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col" style="background-color: blue;">
+	      Column
+	    </div>
+	    <div class="col" style="background-color: orange;">
+	      Column
+	    </div>
+	    <div class="col" style="background-color: red;">
+	      Column
+	    </div>
+	  </div>
+	</div>
+		 
+	<hr>	
+	
+	<div class="container">
+	  <div class="row">
+	    <div class="col" style="background-color: red;">6
+	      1 of 2
+	    </div>
+	    <div class="col" style="background-color: blue;">6
+	      2 of 2
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col" style="background-color: red;">
+	      1 of 3
+	    </div>
+	    <div class="col" style="background-color: blue;">
+	      2 of 3
+	    </div>
+	    <div class="col" style="background-color: green;">
+	      3 of 3
+	    </div>
+	  </div>
+	</div>
+
+	<hr>
+	
+	<div class="container">
+	  <div class="row">
+	    <div class="col" style="background-color: gray;">
+	      1 of 3
+	    </div>
+	    <div class="col-6" style="background-color: blue;">
+	      2 of 3 (wider)
+	    </div>
+	    <div class="col" style="background-color: red;">
+	      3 of 3
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col"  style="background-color: gray;">
+	      1 of 3
+	    </div>
+	    <div class="col-5"  style="background-color: blue;">
+	      2 of 3 (wider)
+	    </div>
+	    <div class="col"  style="background-color: red;">
+	      3 of 3
+	    </div>
+	  </div>
+	</div>
+	 
+	 <hr>
+	 
+	<div class="container">
+	  <div class="row row-cols-2"> <!-- 자리를 고정하여 후에 건들지 않을 경우, row-cols 사용 (cols 뒤에 2는 2등분하여 분할) -->
+	    <div class="col" style="background-color: red;">Column</div>
+	    <div class="col" style="background-color: blue;">Column</div>
+	    <div class="col" style="background-color: green;">Column</div>
+	    <div class="col" style="background-color: gray;">Column</div>
+	  </div>
+	</div>
+	 
+	 <hr>
+	 
+	 
+	 
+	 
+	 
+	<!-- end -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
