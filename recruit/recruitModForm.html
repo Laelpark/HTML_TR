@@ -245,7 +245,7 @@
 		
 
 		// 이미지 미리보기
-        const reader = new FileReader();
+        const reader = new FileReader(s);
         reader.onload = (readerEvent) => {
             document.querySelector("#preview").setAttribute("src", readerEvent.target.result);
         };
